@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Interactive Form Elements</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		
+<link rel="stylesheet" type="text/css" href="style.css">
+
+		
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="browserDetect.js"></script>
+		<script type="text/javascript" src="cookies.js"></script>
+
+		
+		<script type="text/javascript">
+		if(document.all && !window.atob){
+			window.reload();
+		}
+		//code to detect safari browser and throws error
+		if(BrowserDetect.browser == 'Safari') {
+		alert('Sorry!!.. We dont like your browser. Please download Chrome!!!');
+		window.location.replace("https://www.google.com/chrome/browser/desktop/");
+		}
+		
+		</script>
+	</head>
+	<body >
+
+		<div class="container">
+			<div id="square">
+			<h2 id = "headfirst" class="page-header">Welcome, to the Anime Club</h2>
+
+		</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Anime Selector: </h3>
+					<div id="name" class="dropdown">
+					</div>
+					<div id="two" class="text-center">
+					</div>
+					<div id="three">
+					</div>
+					<div id="links"> </div>
+				</div>
+				<div class="col-md-2">
+					
+				</div>
+				<div class="col-md-4">
+					
+					<h3>Send us your review</h3>
+					
+					<form name="contactForm" onSubmit="return false">
+						<div class="form-group">
+							<label for="nfirst">Name</label>
+							<input type="text" class="form-control" id="nfirst" placeholder="Enter Name">
+						</div>
+						<div class="form-group">
+							<label for="eemail">Email</label>
+							<input type="text" class="form-control" id="eemail" placeholder="Email" >
+						</div>
+						<div class="form-group">
+							<label for="message">Comment:</label>
+							<textarea class="form-control" rows="5" id="message" placeholder="Enter your message!"></textarea>
+						</div>
+						<button type="submit" onclick="validateForm();" class="btn btn-primary">Submit</button>
+					</form>
+					<div id="cookie1"> </div>
+
+
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="power">
+			
+		</div>
+		<script src="file.js"></script>
+
+	</body>
+	
+	
+</html>
